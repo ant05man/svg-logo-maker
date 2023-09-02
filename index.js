@@ -32,8 +32,18 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'pixel-shape',
+        name: 'shape',
         message: 'Choose which Shape you would like:',
         choices: ["Circle","Square","Triange"],
     },
 ];
+
+function writeToFile(fileName, data) {
+	console.log(`Writing ${data} to file ${fileName}`)
+    filesystem.writeFile(fileName, data, function (err) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log("Congratulations, you have Generated a logo.svg!");
+    });
+}
