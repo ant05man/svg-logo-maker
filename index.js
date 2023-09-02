@@ -17,3 +17,23 @@ class svg {
         this.shapeElement = shape.render()
     }
 }
+
+const questions = [
+    {
+        type: 'input',
+        name: 'text',
+        message: 'Enter up to 3 characters:',
+    },
+    {
+        type: 'input',
+        name: 'text-color',
+        message: 'Enter a color for font(or hexadecimal number):',
+
+    },
+    {
+        type: 'input',
+        name: 'pixel-shape',
+        message: 'Choose which Shape you would like:',
+        choices: ["Circle","Square","Triange"],
+    },
+];
