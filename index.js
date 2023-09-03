@@ -12,7 +12,9 @@ class Svg {
         return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300" height="200">${this.shapeElement}${this.textElement}</svg>`;
     }
     setTextElement(text, color) {
-        this.textElement = `<text x='150' y='125' font-size='60' text-anchor='middle' fill="${color}">${text}</text>`; // Fixed the fill attribute
+        console.log(`Setting text: ${text}, color: ${color}`);
+        this.textElement = `<text x='150' y='125' font-size='60' text-anchor='middle' fill='${color}'>${text}</text>`;
+
     }
     setShapeElement(shape) {
         this.shapeElement = shape.render();
@@ -60,7 +62,7 @@ async function init() {
     var svgString = "";
     var svgFile = "logo.svg"; 
 
-
+    try {
     // To make asynchronous
     const answers = await inquirer.prompt(questions);
 
@@ -76,7 +78,6 @@ async function init() {
     // Font color
     const userFontColor = answers.textColor;
     console.log(`User font color: ${userFontColor}`);
-
     // Shape color
     const userShapeColor = answers.shapeColor;
     console.log(`Your shape color is: ${userShapeColor}`);
@@ -117,6 +118,9 @@ async function init() {
     console.log("Shape generation complete!");
     console.log("Writing shape to file...");
     writeToFile(svgFile, svgString);
+}catch (error) {
+    console.error("There is an Error",error);
+}    
 }
 
 init();
