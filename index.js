@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { Circle, Square, Triangle } = require('./shapes.js');
+const { Circle, Square, Triangle } = require('./lib/shapes');
 const inquirer = require('inquirer');
 
 
@@ -90,15 +90,15 @@ async function init() {
     let userShape;
     if (userShapeType === "square") {
         userShape = new Square();
-        console.log("User selected Square shape");
+        console.log("Your selected shape is: Square");
     }
     else if (userShapeType === "circle") {
         userShape = new Circle();
-        console.log("User selected Circle shape");
+        console.log("Your selected shape is: Circle");
     }
     else if (userShapeType === "triangle") {
         userShape = new Triangle();
-        console.log("User selected Triangle shape");
+        console.log("Your selected shape is: Triangle");
     }
     else {
         console.log("Invalid shape!");
