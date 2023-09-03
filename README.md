@@ -34,3 +34,11 @@
 -  Inquirer V 8.2.4
 -  VSCode
 
+## What I learned from this project
+
+-  importing modules
+-  creating classes and utilizing them
+-  asynchronous programming
+-  error handling and testing for debugging
+-  file writing
+-  creating an interactive program where you can customize to create your own shape and color
