@@ -24,7 +24,8 @@
 (NPM Test)
 ![Screenshot (25)](https://github.com/ant05man/svg-logo-maker/assets/132954354/9b5b022c-cda4-4dae-a11a-b71fb6129409)
 
-![Screenshot (26)](https://github.com/ant05man/svg-logo-maker/assets/132954354/33d605c6-6ef9-4289-ac68-ae6bba060e94)
+![Screenshot (26)](https://github.com/ant05man/svg-logo-maker/assets/132954354/edd65002-1ae3-4310-89de-6fa7bde87fc4)
+
 
 ## Installation
 -  Clone repository
