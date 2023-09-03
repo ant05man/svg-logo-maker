@@ -1,6 +1,7 @@
 const fs = require('fs');
-const inquirer = require('inquirer');
 const { Circle, Square, Triangle } = require('./lib/shapes.js');
+const inquirer = require('inquirer');
+
 
 class Svg { 
     constructor() {
@@ -43,6 +44,7 @@ const questions = [
     },
 ];
 
+
 function writeToFile(fileName, data) {
     console.log(`Writing to file ${fileName}`);
     fs.writeFile(fileName, data, function (err) {
@@ -57,6 +59,7 @@ async function init() {
     console.log("Starting init");
     var svgString = "";
     var svgFile = "logo.svg"; 
+
 
     // To make asynchronous
     const answers = await inquirer.prompt(questions);
