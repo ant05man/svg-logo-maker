@@ -10,12 +10,12 @@
 
 ## Usage(Instructions)
 
-Open the cloned repository in any source code editor e.g. Visual Studio Code.
-Open integrated terminal on index.js
-Enter “node index.js” in the command line
-Through sequential order within the command line interface - the user will be presented with npm inquirer questions - the user will provide a response to each question and proceed.
-Once completed a SVG file named "logo.svg" will be created.
-At your discretion, you may rename the "logo.svg" file to the file name of your choice
+-  Open the cloned repository in any source code editor e.g. Visual Studio Code.
+-  Open integrated terminal on index.js
+-  Enter “node index.js” in the command line
+-  Through sequential order within the command line interface - the user will be presented with npm inquirer questions - the user will provide a response to each question and proceed.
+-  Once completed a SVG file named "logo.svg" will be created.
+-  At your discretion, you may rename the "logo.svg" file to the file name of your choice
 
 ## Walkthrough Video
 
@@ -25,4 +25,12 @@ At your discretion, you may rename the "logo.svg" file to the file name of your 
 ![Screenshot (25)](https://github.com/ant05man/svg-logo-maker/assets/132954354/13f0bbbd-78c1-4201-8bda-a70cf92d50fe)
 
 ![Screenshot (26)](https://github.com/ant05man/svg-logo-maker/assets/132954354/3914a693-2ed4-4035-bc2f-c2623e29f31f)
+
+## Built With
+
+-  Dynamic JavaScript
+-  Node.js V 20.5.0
+-  Jest Version V 29.6.4
+-  Inquirer V 8.2.4
+-  VSCode
 
