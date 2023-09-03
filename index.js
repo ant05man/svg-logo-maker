@@ -33,8 +33,13 @@ const questions = [
     {
         type: 'input',
         name: 'shape',
+        message: 'Enter a color for your shape(or hexadecimal number):',
+    },
+    {
+        type: 'input',
+        name: 'choose-shape',
         message: 'Choose which Shape you would like:',
-        choices: ["Circle","Square","Triange"],
+        choices: ["Circle","Square","Triangle"],
     },
 ];
 
@@ -47,3 +52,29 @@ function writeToFile(fileName, data) {
         console.log("Congratulations, you have Generated a logo.svg!");
     });
 }
+
+const answers = inquirer.prompt(questions);
+
+var user_text ='';
+if (answers.text.length > 0 && answers.text.length > 4) 
+{
+    user_text =answers.text;
+} else {
+    console.log("Invalid text please enter 1-3 characters")
+
+    return;
+}
+console.log(`User Text: ${user_text}`);
+
+//font color
+user_font_color = answers['text-color'];
+console.log(`User font color: ${user_font_color}`)
+
+//shape color
+user_shape_color = answers['shape'];
+console.log(`Your shape color is:${user_shape_color}`)
+
+//shape type
+user_shape_type = answer['choose-shape'];
+console.log(`Your shape chosen is:${user_shape_type}`)
+
